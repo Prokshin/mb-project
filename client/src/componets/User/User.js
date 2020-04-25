@@ -1,25 +1,31 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import UserName from "./UserName";
 import "./User.css"
 import UserImage from "./UserImage";
 import Modal from 'react-modal';
 import { MdSettings } from "react-icons/md";
-
-const _URL="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+import {useDispatch, useSelector} from "react-redux";
+import { USER_REQUEST} from "../../redux/types";
 
 const User = ()=>{
     const [modal, setModal] = useState(false)
+    const dispatch = useDispatch()
+    const userId = useSelector(state=>state.login.userId)
+    const user = useSelector(state=> state.user);
+
+    useEffect(()=>{
+        dispatch({type:USER_REQUEST, payload: {userId}})
+    },[dispatch,userId])
+
     const openModal = ()=>{
         setModal(true);
     }
-
-
     const closeModal = ()=>{
         setModal(false);
     }
     return (
         <div className="user">
-            <UserName name={"Иван"}/>
+            <UserName name={user.name}/>
             <div className="user__icon-btn" onClick={openModal}><MdSettings/>
             </div>
             <Modal
@@ -27,8 +33,10 @@ const User = ()=>{
                 isOpen={modal}
                 onRequestClose={closeModal}
                 contentLabel="Example Modal"
-            >gg <button onClick={closeModal}>Close Modal</button></Modal>
-            <UserImage url={_URL}/>
+                ariaHideApp={false}
+            ><button className="user__icon-btn" onClick={closeModal}>Close Modal</button>
+            </Modal>
+            <UserImage url={user.img}/>
         </div>)
 }
 

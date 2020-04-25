@@ -1,8 +1,9 @@
 import React from "react";
+import Header from "../componets/Header";
 
 
 const MainPage = ()=>{
-    return <h1>Основная страница приложения</h1>
+    return <><Header/></>
 }
 
 export default MainPage;

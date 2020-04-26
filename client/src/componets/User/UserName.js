@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-const UserName = ({name})=>{
-    return <>{name}</>
-}
+const UserName = ({ name }) => {
+  return <>{name}</>;
+};
 
 export default UserName;

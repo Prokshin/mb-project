@@ -1,11 +1,12 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
     padding: 15px 0;
 }
-.header__item{
+
+.header__item {
     font-size: 1.4em;
     font-weight: 600;
 }

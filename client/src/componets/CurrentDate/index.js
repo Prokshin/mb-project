@@ -1,2 +1,3 @@
-import CurrentDate from "./CurrentDate";
-export  default CurrentDate;
+import CurrentDate from './CurrentDate';
+
+export default CurrentDate;

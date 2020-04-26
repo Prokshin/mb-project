@@ -4,14 +4,19 @@ export default class AccountAPI {
     return _FULL_BALANCE;
   };
   getAccountInfo = async () => {
-    console.log('--API: получение текущего аккаунта');
+    console.log('--API: получение текущего счёта');
     return _CURRENT_INFO;
   };
   getAccounts = async () => {
-    console.log('--API: получение всех аккаунтов');
+    console.log('--API: получение всех счетов');
     return _Accounts;
   };
+  getHistory = async () => {
+    console.log('--API: получение истории счёта');
+    return _History;
+  };
 }
+
 
 const _FULL_BALANCE = 24000;
 const _CURRENT_INFO = {
@@ -30,5 +35,23 @@ const _Accounts = [
   },
   {
     number: '10000000012',
+  },
+];
+
+const _History = [
+  {
+    type: 'Платёж',
+    date: '2020-04-17T03:24:00',
+    sum: '2000',
+  },
+  {
+    type: 'Платёж',
+    date: '2020-04-17T03:24:00',
+    sum: '2000',
+  },
+  {
+    type: 'Платёж',
+    date: '2020-04-17T03:24:00',
+    sum: '2000',
   },
 ];

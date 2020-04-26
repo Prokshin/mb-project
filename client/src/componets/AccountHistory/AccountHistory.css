@@ -1,0 +1,34 @@
+.account__date {
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.account__table {
+    background-color: #ffffff;
+    box-shadow: 0 0 1rem rgba(41, 61, 113, .1);
+    padding: 3em;
+    margin-right: 2em;
+    border-radius: 0.5em;
+    max-width: 900px;
+}
+
+.account__table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.account__table table tbody tr:nth-child(even) {
+    background-color: #f8faff;
+}
+
+.account__table table thead {
+    border-bottom: 2px solid rgb(41, 61, 113);
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.account__table td {
+    padding: 1.2em;
+}

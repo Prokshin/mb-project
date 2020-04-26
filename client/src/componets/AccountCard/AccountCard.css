@@ -1,0 +1,36 @@
+.account__card {
+    grid-area: card;
+    background-color: #ffffff;
+    box-shadow: 0 0 1rem rgba(41, 61, 113, .1);
+    padding: 3em;
+    margin-right: 2em;
+    border-radius: 0.5em;
+    max-width: 900px;
+}
+
+.account__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.account__number {
+    font-size: 1.4em;
+    font-weight: 600;
+
+}
+
+.account__balance {
+    font-size: 1.7em;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.account__other {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}

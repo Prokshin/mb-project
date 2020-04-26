@@ -17,6 +17,12 @@ const UserSettings = () => {
       <div className="user__icon-btn" onClick={openModal}><MdSettings />
       </div>
       <Modal
+        style={{
+          overlay: {
+            backgroundColor: 'rgba(37,60,119,0.92)',
+            cursor: 'pointer',
+          },
+        }}
         className="user__modal"
         isOpen={modal}
         onRequestClose={closeModal}

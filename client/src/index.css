@@ -10,7 +10,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #4971D0;
+    background-color: #f8faff;
+    font-size: 14px;
 }
 
 code {

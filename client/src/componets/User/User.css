@@ -18,6 +18,7 @@
     width: 400px;
     height: 400px;
     background-color: white;
+    cursor: default;
 }
 
 .user__icon-btn {

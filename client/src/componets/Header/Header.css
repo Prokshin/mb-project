@@ -2,11 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffffff;
+    color: #253c77;
     padding: 15px 0;
 }
 
 .header__item {
     font-size: 1.4em;
-    font-weight: 600;
+    font-weight: 800;
 }

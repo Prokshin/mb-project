@@ -1,7 +1,41 @@
 .content {
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 1600px;
+    max-width: 1200px;
     min-height: 100vh;
+}
 
+.btn {
+    border: none;
+    font-family: inherit;
+    padding: 1em;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.2s;
+    width: 220px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.bg_green {
+    background-color: #8CCA11;
+    color: #ffffff;
+}
+
+.bg_red {
+    background-color: #FB4949;
+    color: #ffffff;
+}
+
+.bg_orange {
+    background-color: #fe7a3c;
+    color: #ffffff;
+}
+
+.separate {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 30px auto 30px;
 }

@@ -1,0 +1,18 @@
+.account {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "card card card select" "history history history .";
+    color: #253c77;
+    margin-top: 2em;
+}
+
+
+.account__select {
+    grid-area: select;
+}
+
+.account__history {
+    margin-top: 2em;
+    grid-area: history;
+
+}
